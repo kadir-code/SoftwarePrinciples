@@ -26,6 +26,12 @@ namespace Solid_Principles._3_InterfaceSegregation.WrongImplementation
             MessageBox.Show("Print Done");
             return true;
         }
+
+        public bool PrintDuplexContent(string content)
+        {
+            throw new NotImplementedException();
+        }
+
         public bool ScanContent(string content)
         {
             MessageBox.Show("Scan Done");
