@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EC3FDF4C-3432-4230-8002-354A85141259}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Solid_Principles</RootNamespace>
+    <AssemblyName>Solid_Principles</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="1_SingleResponsibility\RightImplementation\IEmail.cs" />
+    <Compile Include="1_SingleResponsibility\RightImplementation\ILogger.cs" />
+    <Compile Include="1_SingleResponsibility\RightImplementation\IUser.cs" />
+    <Compile Include="1_SingleResponsibility\WrongImplementation\IUser.cs" />
+    <Compile Include="2_OpenClosed\CorrectImplementation\Abstract\BaseEmployee.cs" />
+    <Compile Include="2_OpenClosed\CorrectImplementation\Concrete\PremanentEmployee.cs" />
+    <Compile Include="2_OpenClosed\CorrectImplementation\Concrete\TemporaryEmployee.cs" />
+    <Compile Include="2_OpenClosed\CorrectImplementation\EmployeeDemo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2_OpenClosed\CorrectImplementation\EmployeeDemo.Designer.cs">
+      <DependentUpon>EmployeeDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="2_OpenClosed\WrongImplementation\Employee.cs" />
+    <Compile Include="2_OpenClosed\WrongImplementation\EmployeeDemo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2_OpenClosed\WrongImplementation\EmployeeDemo.Designer.cs">
+      <DependentUpon>EmployeeDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="3_InterfaceSegregation\CorrectImplementation\Concrete\CanonPrinter.cs" />
+    <Compile Include="3_InterfaceSegregation\CorrectImplementation\Concrete\HpPrinter.cs" />
+    <Compile Include="3_InterfaceSegregation\CorrectImplementation\Interface\IFaxContent.cs" />
+    <Compile Include="3_InterfaceSegregation\CorrectImplementation\Interface\IPrintDuplex.cs" />
+    <Compile Include="3_InterfaceSegregation\CorrectImplementation\Interface\IPrintScanContent.cs" />
+    <Compile Include="3_InterfaceSegregation\WrongImplementation\Concrete\CanonPrinter.cs" />
+    <Compile Include="3_InterfaceSegregation\WrongImplementation\Concrete\HpPrinter.cs" />
+    <Compile Include="3_InterfaceSegregation\WrongImplementation\Interface\IPrintTasks.cs" />
+    <Compile Include="4_LiskovSubstitution\CorrectExample\Abstract\BaseEntity.cs" />
+    <Compile Include="4_LiskovSubstitution\CorrectExample\Concrete\AnimalDuck.cs" />
+    <Compile Include="4_LiskovSubstitution\CorrectExample\Concrete\ToyAnimal.cs" />
+    <Compile Include="4_LiskovSubstitution\CorrectExample\Interface\IChargeBattery.cs" />
+    <Compile Include="4_LiskovSubstitution\WrongExample\Abstarct\BaseEntity.cs" />
+    <Compile Include="4_LiskovSubstitution\WrongExample\Concrete\AnimalDuck.cs" />
+    <Compile Include="4_LiskovSubstitution\WrongExample\Concrete\ToyDuck.cs" />
+    <Compile Include="5_DependencyInversion\CorrectExample\Concrete\Email.cs" />
+    <Compile Include="5_DependencyInversion\CorrectExample\Concrete\Notification.cs" />
+    <Compile Include="5_DependencyInversion\CorrectExample\Concrete\Sms.cs" />
+    <Compile Include="5_DependencyInversion\CorrectExample\Interface\IMessage.cs" />
+    <Compile Include="5_DependencyInversion\WrongExample\Email.cs" />
+    <Compile Include="5_DependencyInversion\WrongExample\Notification.cs" />
+    <Compile Include="5_DependencyInversion\WrongExample\Sms.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
