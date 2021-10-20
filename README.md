@@ -1,4 +1,4 @@
-# Solid Principles
+# Software Principles
 #### SOLID Principles and Design Models play an important role in achieving all of the following points.
 * **Sustainability** : Sustainable systems are very important for organizations.</br>
 * **Testability** : Test-oriented development (TDD) is required when designing and developing large-scale systems</br>
