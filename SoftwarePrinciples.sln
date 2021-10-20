@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solid_Principles", "Solid_P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DRY_Principle", "DRY_Principle\DRY_Principle.csproj", "{3F5D59AB-7081-4F38-9286-21C10D4614A7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOC_SeparationOfConcernsPrinciple", "SOC_SeparationOfConcernsPrinciple\SOC_SeparationOfConcernsPrinciple.csproj", "{CD4B3A04-4157-4929-A950-99B19F4E4718}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{3F5D59AB-7081-4F38-9286-21C10D4614A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F5D59AB-7081-4F38-9286-21C10D4614A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F5D59AB-7081-4F38-9286-21C10D4614A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD4B3A04-4157-4929-A950-99B19F4E4718}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD4B3A04-4157-4929-A950-99B19F4E4718}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD4B3A04-4157-4929-A950-99B19F4E4718}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD4B3A04-4157-4929-A950-99B19F4E4718}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
