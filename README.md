@@ -30,7 +30,7 @@ There should be only one reason for a class to change.This means that each modul
 * The interface-segregation principle (ISP) states that "no client should be forced to depend on methods it does not use".
 * This means, instead of one fat interface many small interfaces are preferred based on groups of methods with each one serving one sub-module.
 
-## Dependency Inversion Principle Introduction
+## Dependency Inversion Principle 
 During the process of the application design, lower-level components are designed to be consumed by higher-level components which enable increasingly complex systems to be built. In this Process of Composition, higher-level components depend directly upon lower-level components to achieve some task. 
 
 This dependency upon lower-level components limits the reuse opportunities of the higher-level components and ends up in a bad design.
