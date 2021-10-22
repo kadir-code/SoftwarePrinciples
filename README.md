@@ -1,4 +1,4 @@
-# Solid Principles
+# Software Principles
 #### SOLID Principles and Design Models play an important role in achieving all of the following points.
 * **Sustainability** : Sustainable systems are very important for organizations.</br>
 * **Testability** : Test-oriented development (TDD) is required when designing and developing large-scale systems</br>
@@ -47,3 +47,16 @@ This dependency upon lower-level components limits the reuse opportunities of th
 
 From the illustrated diagram, High-level Modules depends directly on Low-level Modules and this does not follow the first point of DIP. 
 This flow certainly looks good, but we're combining different layers, so any further changes would be complex and hard to change.
+## SoC (Separation Of Concerns)
+[Go To Example](https://github.com/kadir-code/SoftwarePrinciples/tree/master/SOC_SeparationOfConcernsPrinciple)
+
+The Separation of Concerns design principle focuses on our creation of clusters/capsules with components with low cohesion and similar responsibilities, with clear separation of responsibilities.
+
+## DRY (Don’t repeat your self) Principle
+[Go To Example](https://github.com/kadir-code/SoftwarePrinciples/tree/master/DRY_Principle)
+
+Don't repeat yourself! The DRY principle is hostile to code duplication. Destroying the project by repeating the same code (usually by copy-paste) wherever needed; manageability, naturally, focuses on preventing it from moving away from the possibilities of developability and sustainability.
+
+If we need to reuse a previously written code or code block; By converting the existing code into a function/class/method (by refactoring if possible), we should connect the old user to this point, and then use this centralized point in the new codes we will write.
+
+With SoC, sustainable, developable and reusable components and projects are possible thanks to these components.In this way, it will be easier to manage and we will have a much more organized architecture.
