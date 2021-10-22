@@ -46,6 +46,7 @@
     <Compile Include="WithIoC\ConnectionFactory.cs" />
     <Compile Include="WithIoC\DbConnection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WithIoC\Interface\IConnection.cs" />
     <Compile Include="WithoutIoC\AppDbContext\MongoDbContext.cs" />
     <Compile Include="WithoutIoC\AppDbContext\MsSqlDbContext.cs" />
     <Compile Include="WithoutIoC\DbConnection.cs" />

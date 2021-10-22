@@ -1,4 +1,5 @@
 ﻿using IoC_Principle.AppDbContext;
+using IoC_Principle.WithIoC.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace IoC_Principle.WithIoC
 {
     public class ConnectionFactory
     {
-        public static MongoDbContext GetConnection()
+        public static IConnection GetConnection()
         {
             return new MongoDbContext();
         }
