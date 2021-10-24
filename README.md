@@ -60,3 +60,19 @@ Don't repeat yourself! The DRY principle is hostile to code duplication. Destroy
 If we need to reuse a previously written code or code block; By converting the existing code into a function/class/method (by refactoring if possible), we should connect the old user to this point, and then use this centralized point in the new codes we will write.
 
 With SoC, sustainable, developable and reusable components and projects are possible thanks to these components.In this way, it will be easier to manage and we will have a much more organized architecture.
+
+## IoC (Inversion Of Control) Principle
+[Go To Example](https://github.com/kadir-code/SoftwarePrinciples/tree/master/IoC_Principle)
+
+![alt text for screen readers]( https://devnot.com/wp-content/uploads/2020/05/Ioc_1.png
+"Text to show on mouseover")
+
+IoC is a software development principle that aims to create loose coupling objects with little interdependence throughout the application lifecycle. It is responsible for the life cycle of objects, provides their management. When an interface is injected into the class using IoC, the corresponding interface methods become available. Thus, the class using IoC only knows the methods it will use, even if there are more methods in the class, it will be able to access the methods specified in the interface.
+
+### We can list the advantages of using IoC as follows:
+
+* Creating loosely coupled classes
+* Easy unit test writing
+* Manageability
+* Modular programs
+* Easy transition between different implementations
